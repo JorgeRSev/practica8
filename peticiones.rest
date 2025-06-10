@@ -1,3 +1,16 @@
 @host = http://localhost:3000
 
 GET {{host}}/api/autores
+
+###
+POST {{host}}/api/autores
+Content-Type: application/json
+
+{
+  "email": "ana@example.com",
+  "imagen": "https://example.com/imagen.jpg"
+}
+
+
+###
+GET {{host}}/api/autores/1
