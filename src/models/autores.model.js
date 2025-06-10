@@ -28,7 +28,7 @@ module.exports = {
   getAll,
   create,
   getById,
-  getByEmail,
+  getByEmail
 };
 
 /*
@@ -44,9 +44,3 @@ module.exports = {
   eliminar un post
   recuperar un post por id
 */
-
-module.exports = {
-  getAll,
-  create,
-  getById,
-};

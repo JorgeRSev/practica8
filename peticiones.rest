@@ -7,9 +7,10 @@ POST {{host}}/api/autores
 Content-Type: application/json
 
 {
-  "email": "ana@example.com",
-  "imagen": "https://example.com/imagen.jpg"
-}
+  "nombre": "paco",
+  "email": "paco@example.com",
+  "imagen": 
+  }
 
 
 ###
