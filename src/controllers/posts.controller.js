@@ -9,6 +9,15 @@ const getAllPosts = async (req, res) => {
   }
 };
 
+const getPostsByAutorId = async (req, res) => {
+  const { id } = req.params;
+  try {
+    const posts = await postsModel.getByAutorId(id);
+    res.json(posts);
+  } catch (err) {
+    res.status(500).json({ error: "Error al obtener los posts del autor" });
+  }
+};
 
 
 const createPost = async (req, res) => {
@@ -30,4 +39,4 @@ const createPost = async (req, res) => {
 };
 
 
-module.exports = { getAllPosts, createPost};
+module.exports = { getAllPosts, createPost, getPostsByAutorId };

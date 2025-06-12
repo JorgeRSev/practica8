@@ -16,7 +16,14 @@ const create = async ({ titulo, categoria, descripcion, autores_id }) => {
   return result;
 };
 
+const getByAutorId = async (autores_id) => {
+  const sql = "SELECT * FROM posts WHERE autores_id = ?";
+  const [result] = await db.query(sql, [autores_id]);
+  return result;
+};
+
 module.exports = {
   getAll,
-  create
+  create,
+  getByAutorId
 };

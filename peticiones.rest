@@ -3,6 +3,9 @@
 GET {{host}}/api/autores
 
 ###
+GET {{host}}/api/autores/1
+
+###
 POST {{host}}/api/autores
 Content-Type: application/json
 
@@ -12,9 +15,6 @@ Content-Type: application/json
   "imagen": "https://example.com/avatars/paco.png"
 }
 
-
-###
-GET {{host}}/api/autores/1
 
 ###
 GET {{host}}/api/posts
@@ -30,3 +30,7 @@ Content-Type: application/json
   "descripcion": "Este es el contenido del post.",
   "autores_id": 1
 }
+
+
+### Obterner todos los posts de un autor
+GET {{host}}/api/posts/autor/1
