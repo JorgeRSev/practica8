@@ -9,9 +9,24 @@ Content-Type: application/json
 {
   "nombre": "paco",
   "email": "paco@example.com",
-  "imagen": 
-  }
+  "imagen": "https://example.com/avatars/paco.png"
+}
 
 
 ###
 GET {{host}}/api/autores/1
+
+###
+GET {{host}}/api/posts
+
+
+### Crear un nuevo post
+POST {{host}}/api/posts/create
+Content-Type: application/json
+
+{
+  "titulo": "Mi segundo post",
+  "categoria": "Opinión",
+  "descripcion": "Este es el contenido del post.",
+  "autores_id": 1
+}

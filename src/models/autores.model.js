@@ -31,16 +31,3 @@ module.exports = {
   getByEmail
 };
 
-/*
-  actualizar un autor
-  eliminar un autor
-*/
-
-/*
-  recuperar todos los posts
-  recuperar todos los posts de un autor
-  crear un post
-  actualizar un post
-  eliminar un post
-  recuperar un post por id
-*/
